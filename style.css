@@ -44,8 +44,9 @@ body {
 }
 
 
-.video video{
+.video video{ 
   width: 100%;
+  display: none;
 
 }
 
@@ -307,6 +308,11 @@ footer {
     overflow-x: auto;
     gap: 10px;
     padding-bottom: 10px;
+  }
+
+
+  .video video{
+    display: block;
   }
 
 

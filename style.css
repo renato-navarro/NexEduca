@@ -43,6 +43,12 @@ body {
   white-space: nowrap;
 }
 
+
+.video video{
+  width: 100%;
+
+}
+
 /* ===============================
    MENU SIMPLIFICADO
    =============================== */

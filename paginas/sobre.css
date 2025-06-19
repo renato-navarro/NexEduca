@@ -1,0 +1,125 @@
+
+    /* Remove margem/padding padrão da página para "esconder" espaço em volta */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5; /* opcional, para melhor visual */
+      font-family: Arial, sans-serif;
+    }
+
+/* ===============================
+   CABEÇALHO (HEADER)
+   =============================== */
+.top-header {
+  background-color: #232f3e;
+  padding: 12px 0;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* permite quebra de linha se necessário */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9900;
+  white-space: nowrap; /* evita quebra do logo */
+}
+
+/* ===============================
+   MENU SIMPLIFICADO (LINKS DO CABEÇALHO)
+   =============================== */
+.menu-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap; /* evita overflow e permite quebra se precisar */
+  min-width: 0;
+}
+
+.menu-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap; /* evita quebra interna nos links */
+}
+
+.menu-icons a:hover {
+  color: #ff9900;
+  background-color: rgba(255, 153, 0, 0.15);
+}
+
+/* Botão “Comprar” mais destacado */
+.menu-icons a.btn-comprar {
+  background-color: #ff9900;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.menu-icons a.btn-comprar:hover {
+  background-color: #e68000;
+  color: white;
+}
+
+/* ===============================
+   Estilo para a página Sobre
+   =============================== */
+.sobre-container {
+  max-width: 900px;
+  margin: 60px auto 120px; /* espaço maior abaixo para não ficar atrás do footer */
+  background-color: #fff;
+  padding: 24px 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #232f3e;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.sobre-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff9900;
+}
+
+.sobre-container p {
+  margin-bottom: 16px;
+}
+
+/* ===============================
+   Footer fixo ao final da página
+   =============================== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #232f3e;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* Link ativo no menu */
+.menu-icons a.active {
+  color: #ff9900;
+  font-weight: bold;
+  pointer-events: none;
+}

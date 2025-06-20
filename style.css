@@ -339,3 +339,9 @@ footer {
 
 
 }
+@media (max-width: 400px){
+  .produtos-recomendados{
+    display: block;
+  }
+
+}
